@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        /* html,body{
+            width: 100%;
+            overflow-x: hidden;
+        } */
+        #menu-switch{
+            display: none;
+        }
+        .main-header{
+            background-color: #ccc;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+        }
+        .logo img{
+            vertical-align: middle;
+        }
+        
+        
+@media screen and (max-width:767px){
+         .hb{
+            width: 40px;
+            height: 40px;
+            background-color: #f00;
+            position: relative;
+         
+        }
+        .hb span{
+            width: 80%;
+            height: 2px;
+            background-color: #ff0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .hb span:nth-child(1){
+            top: 9px;
+            rotate: 0deg;
+            transition: top 0.5s 0.5s, rotate 0.5s;
+        }
+        .hb span:nth-child(2){
+            top: 19px;
+            opacity: 1;
+        }
+        .hb span:nth-child(3){
+            top: 29px;
+            rotate: 0deg;
+            transition: top 0.5s 0.5s, rotate 0.5s;
+        }
+        
+
+        
+        /* checkbox控制 */
+        #menu-switch:checked + .main-header .hb span:nth-child(1){
+            top: 19px;
+            rotate: 405deg;
+            transition: top 0.5s, rotate 0.5s 0.5s;
+        }
+        #menu-switch:checked + .main-header .hb span:nth-child(2){
+            opacity: 0;
+            transition: 0.5s;
+        }
+        #menu-switch:checked + .main-header .hb span:nth-child(3){
+            top: 19px;
+            rotate: 315deg;
+            transition: top 0.5s, rotate 0.5s 0.5s;
+        }
+        .main-nav{
+            width: 80%;
+            height: calc(100dvh - 60px);
+            position: absolute;
+            background-color: #fa0;
+            right: 0;
+            top: 100%;
+            /* display: none; */
+            transform: translateX(95%);
+            transition: 1s;
+            opacity: 0;
+        }
+        .main-nav a{
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+        }
+        .main-nav a + a{
+            border-top: 1px solid #000;
+        }
+        #menu-switch:checked + .main-header .main-nav{
+            transform: translateX(0%);
+            opacity: 1;
+        }
+
+}
+
+        @media screen and (min-width:1024px){
+              .hb{
+                display: none;
+              } 
+            
+              .main-nav a{
+                display: inline-block;
+              }  
+              
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="menu-switch">
+    <header class="main-header">
+        <div class="logo">
+            <a href="#"> 
+                <img src="https://picsum.photos/80/40/?random=10">
+            </a>   
+        </div>
+
+        <label for="menu-switch" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
+        <nav class="main-nav">
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste culpa sequi vitae. Autem iure quas reiciendis fugit. Harum, aut possimus asperiores recusandae voluptatem aspernatur. Dignissimos, incidunt ea. Voluptatem, consequatur sapiente!
+       Nesciunt minus laboriosam molestias inventore ducimus, sint tenetur ab quo atque eveniet incidunt minima vitae quisquam nulla officiis perferendis voluptatum placeat odio magni illum repellendus? Labore facilis fugiat pariatur maxime.
+       Perferendis hic enim illum id libero dolor accusantium! Atque nemo cupiditate beatae debitis quae inventore voluptatem ipsum sunt. Cupiditate recusandae earum ab molestiae quae totam. Omnis molestiae eius aut reiciendis.
+       Porro qui pariatur, voluptas incidunt debitis ut commodi, adipisci nam tempora, aspernatur eius. Accusamus minus soluta perspiciatis nemo delectus tempore! Necessitatibus rerum sapiente, reprehenderit nisi repellendus accusantium possimus corporis! Provident.
+       Fuga totam fugit, molestias incidunt quisquam ea reprehenderit reiciendis, cumque rem rerum earum quo debitis fugiat quas quod veniam dolorem quasi itaque id, impedit magni ipsam. Quia vitae hic eligendi?
+       Dolore tenetur quaerat rerum, architecto magni beatae maxime natus excepturi quasi aut, veritatis eveniet alias aspernatur quibusdam? Doloribus natus voluptatibus debitis, laudantium quis minima aut dolor error? Temporibus, aspernatur laudantium.
+       Minus laborum doloribus eligendi. Optio corrupti ullam error voluptatum aliquam aut labore alias, minus adipisci saepe eum blanditiis veniam ad, nostrum, velit in. Architecto consequuntur eaque minima ex provident reprehenderit?
+       Odit dolorum architecto, sapiente labore quo amet fugiat qui! Ipsam quibusdam voluptates rerum, hic animi aliquam repellat laborum assumenda qui odio nostrum autem nisi excepturi doloribus repellendus sed, sequi dolor!
+       Adipisci magni magnam repellendus voluptates ipsum ut officiis dignissimos nobis sint repellat soluta et tempora cumque, ratione sed. A voluptates, nihil doloremque itaque inventore laboriosam repellendus debitis facere vitae vel?
+       Tempore tempora dolore distinctio at veniam adipisci accusamus eum nostrum quo veritatis blanditiis molestias doloribus totam magnam quidem temporibus fugiat id iste similique maxime, cupiditate tenetur vitae! Sint, iusto unde?
+       Cupiditate eligendi dolorum nobis voluptatum eaque animi ab! Sint maiores, quis vero deserunt, laboriosam quidem quos rem aliquam, iure eius excepturi. Doloribus accusantium molestiae consectetur sint amet iste vel nesciunt.
+       Ea qui accusantium illum consequuntur voluptates nisi commodi sint quasi doloremque rem odio corporis sit culpa similique nulla, quia accusamus quas assumenda nostrum minus? Impedit quo veritatis quidem ut repudiandae.
+       Dicta voluptate quam doloremque vitae excepturi! Nobis sed sit quibusdam repudiandae ullam vel quo placeat exercitationem omnis expedita. Maxime error laboriosam aliquid placeat dolore ea ducimus. Possimus quas totam asperiores!
+       Libero inventore, sunt voluptate sed mollitia impedit dolorum expedita, eius harum quidem vitae ipsa iure suscipit reiciendis quam dignissimos qui ratione sit. Numquam excepturi expedita corporis amet iusto accusantium aperiam.
+       Quia autem voluptatum labore, vero magni aliquid dolor dolore animi vitae beatae corrupti pariatur similique voluptatem repellat soluta, reiciendis fugit veritatis. Asperiores, sed eos! Dolor vel molestiae praesentium deleniti ipsum.
+       Voluptas natus, facilis aperiam molestiae sed, vel possimus ipsam pariatur rerum asperiores repellat aliquid, eos eum voluptatum omnis consectetur cum beatae blanditiis minima! Dolorum explicabo voluptate, corporis asperiores ipsam reiciendis.
+       Vitae voluptatem molestias excepturi, reiciendis neque consectetur quis ipsam facilis nesciunt corporis, quod aliquam voluptatibus magni? Placeat voluptatem consequuntur eveniet repudiandae magnam omnis iusto inventore. Optio provident quia sit aperiam.
+       Dolorem magnam fugit optio esse fuga omnis praesentium deleniti itaque velit culpa, necessitatibus blanditiis inventore nobis corporis veniam maxime amet ipsum rem. Ducimus, quas sed repellendus neque sunt voluptatibus fugit!
+       Iste eligendi eaque alias, dolorum hic laboriosam qui consectetur, blanditiis error, earum quidem sit nam quod rem aliquid quaerat doloribus architecto! Aut, quasi. Consequatur ipsam veniam ab magni molestiae? Et.
+       Quibusdam vero ut, ipsa explicabo accusamus blanditiis voluptates ex alias magnam harum nesciunt, quis nobis eos inventore totam nihil voluptatibus sunt porro recusandae nulla dignissimos debitis suscipit? Perferendis, eveniet odio.
+    </main>
+</body>
+</html>

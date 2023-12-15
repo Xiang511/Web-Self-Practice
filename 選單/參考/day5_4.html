@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        @media screen and (max-width:767px){
+            .main-nav{
+                width: 80%;
+                background-color: #fa0;
+                color: #fff;
+            }
+            .main-nav a{
+                display: block;
+                flex-grow: 1;
+                color:#fff;
+                padding: 10px 20px;
+                outline: 1px solid red;
+            }
+            .main_menu input{
+                display: none;
+            }
+            .main_menu >li{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .main-nav a ~ .icon{
+             display: block;
+             aspect-ratio: 1/1;
+             background-color: #aaa;
+             text-align: center;   
+             width: 40px;
+            }
+            .sub_menu{
+                display: none;
+                /* 換行 */
+                width: 100%;
+                background-color: #00f;
+            }
+            .main_menu > li:has(input:checked) .icon{
+                background-color: #f00;
+                transform: rotate(90deg);
+            }
+            .main_menu > li:has(input:checked) .sub_menu{
+                display: block;
+                
+            }
+        }
+        @media screen and (min-width:768px){
+                  .main_menu{
+                    display: flex;
+                  }   
+                  .sub_menu{
+                    display: none;
+                    width: 100%;
+                    background-color: #00f;
+                  }
+                  .sub_menu a{
+                    color:#fff
+                  }
+                  .main-nav a ~ .icon{
+                    display: none;
+                  }
+                  .main_menu li{
+                    position: relative;
+                  }
+                  .main_menu li:hover .sub_menu{
+                    display: block;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 10em;
+                  }
+            }
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <ul class="main_menu">
+            <li><a href="#">link</a></li>
+            <li>
+                <a href="#">link</a>
+                
+                <label for="m1" class="icon">▶
+                <input type="checkbox" name="" id="m1"></label>
+                <ul class="sub_menu w-100">
+                    <li><a href="#">sub-link</a></li>
+                    <li><a href="#">sub-link</a></li>
+                    <li><a href="#">sub-link</a></li>
+                    <li><a href="#">sub-link</a></li>
+                </ul>
+            </li>
+            <li><a href="#">link</a></li>
+            <li>
+                <a href="#">link</a>
+                
+                <label for="m2" class="icon">▶
+                <input type="checkbox" name="" id="m2"></label>
+                <ul class="sub_menu w-100">
+                    <li><a href="#">sub-link</a></li>
+                    <li><a href="#">sub-link</a></li>
+                    <li><a href="#">sub-link</a></li>
+                    <li><a href="#">sub-link</a></li>
+                </ul>
+            </li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
