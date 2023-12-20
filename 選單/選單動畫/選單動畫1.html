@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .icon {
+            position: relative;
+            height: 35px;
+            width: 35px;
+            /* border: 1px solid rgba(0, 0, 0, 0.3); */
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 0 8px;
+            transition: all 0.3s ease;
+        }
+
+        .icon i {
+            position: absolute;
+            font-size: 30px;
+            left: 50%;
+            top: 50%;
+            color: #333;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            transition: all 0.3s ease;
+        }
+
+        .icon.active {
+            /* background: #FF676D; */
+        }
+        .icon i.close {
+            opacity: 0;
+        }
+        .icon.active i.close {
+            opacity: 1;
+            transform: translate(-50%, -50%) rotate(180deg);
+        }
+
+        .icon.active i.open {
+            opacity: 0;
+            transform: translate(-50%, -50%) rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" name="" id="menu-switch">
+    <header class="main-header">
+        <div class="logo">
+            <a href="#"><img src="https://picsum.photos/id/684/80/40" alt=""></a>
+        </div>
+
+        <label for="menu-switch" class="hb icon">
+            <i class='bx bx-menu open'></i>
+            <i class='bx bx-x close'></i>
+        </label>
+        <nav class="main-nav">
+            <a href="#">123</a>
+            <a href="#">123</a>
+            <a href="#">123</a>
+            <a href="#">123</a>
+            <a href="#">123</a>
+        </nav>
+        <script>
+            let menuBtn = document.querySelectorAll(".icon");
+            for (var i = 0; i < menuBtn.length; i++) {
+                menuBtn[i].addEventListener("click", (e) => {
+                    console.log(e.target);
+                    e.target.classList.toggle("active");
+                });
+            }
+        </script>
+    </header>
+    <main>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ratione veritatis culpa at aliquid dolorem
+        dignissimos sint reprehenderit quod non, mollitia voluptates exercitationem animi voluptatem tempora unde iusto
+        autem architecto?
+        Quod voluptate alias inventore eligendi illum, quae fugit repudiandae officia error iure aut voluptatibus
+        explicabo quos. Nihil, veritatis, ratione perspiciatis, adipisci deleniti sint quidem illum praesentium iste
+        rerum modi id.
+        Voluptatum debitis enim cum? Animi ducimus facilis sunt expedita officiis quasi est magnam aut maiores sequi
+        sapiente accusamus aspernatur nisi ab totam fuga aliquam placeat, vero optio amet. Exercitationem, deserunt.
+        Fugiat incidunt ducimus tenetur, exercitationem praesentium animi voluptatibus similique corrupti quia. Eligendi
+        neque beatae architecto nesciunt animi itaque, dolorum quidem minus adipisci ea nobis facere minima ducimus
+        incidunt corporis praesentium?
+        Numquam alias quaerat, veritatis aliquid dignissimos accusamus maiores vitae nam quidem minus, porro perferendis
+        ab hic iusto iure vero veniam fugiat ad? Accusamus provident maxime dolorum laboriosam error est porro.
+        Ullam neque a dolore iusto, maiores veniam, amet velit aliquam ipsam obcaecati doloremque! A tenetur obcaecati
+        aliquid sed necessitatibus fugiat debitis numquam voluptas. Quis rem animi nam? Eaque, placeat illum.
+        Corrupti exercitationem rerum dolorem esse amet beatae eius animi autem laudantium sapiente, accusantium neque
+        inventore repellat voluptate. Ut vitae assumenda obcaecati, quam esse expedita distinctio a omnis totam, vel
+        tempore.
+        Debitis repudiandae in accusantium, nulla, libero recusandae illo eos minima amet dignissimos excepturi maxime
+        praesentium magni, dolores neque animi iusto quaerat vero! Laborum nobis sequi id, eveniet quae eius laudantium.
+        Ut, voluptates aperiam maxime eaque neque illum quaerat doloribus officiis delectus consectetur. Illum amet
+        similique vero non ad iure adipisci pariatur, consectetur aliquam expedita repudiandae eligendi! Molestias
+        impedit cum ducimus.
+        Excepturi sapiente tempora quam commodi ratione nemo minima pariatur sunt tempore perferendis veniam
+        perspiciatis, iste est laborum eveniet autem cumque ipsum placeat aliquid quisquam molestiae tenetur vel
+        consectetur hic. Magni.
+        Perferendis nisi, unde pariatur dignissimos eligendi asperiores corrupti nostrum ad facere aspernatur officia,
+        soluta explicabo corporis? Commodi ratione assumenda eos corrupti quaerat quae iure delectus eaque dolorem,
+        voluptatem illo quas!
+        Dignissimos reprehenderit aliquid excepturi iste voluptatem doloremque quibusdam quas? Laboriosam, voluptatum!
+        Optio vero similique soluta neque sint eius? Nam eius alias non sit eaque, vel ex tempore possimus vero
+        blanditiis.
+        Voluptate quia blanditiis, voluptatum eveniet aliquam vitae incidunt, sequi tenetur aperiam porro quis eligendi
+        deleniti dolor officiis modi. Nisi natus iure voluptates laboriosam voluptatem nam dicta ex aliquid mollitia
+        placeat!
+        Dolor, dignissimos vero, accusamus ut maxime deserunt, sed velit voluptas laborum magni hic. Tenetur placeat
+        assumenda, ex rerum, vero fugiat necessitatibus nam voluptates porro accusamus quaerat quasi perspiciatis, iste
+        officiis?
+        Blanditiis sequi laudantium error asperiores! Distinctio eligendi, amet ipsum ipsa consequuntur saepe quaerat
+        dicta eaque quos dolorem, ea fugiat praesentium explicabo. Soluta tenetur, doloremque voluptate similique quia
+        dolore dolores magnam.
+        Saepe ad, pariatur similique consectetur impedit facilis, necessitatibus tempora porro quibusdam alias
+        asperiores laboriosam, id repellendus quaerat mollitia maxime non in! Autem repellendus nihil consequuntur
+        commodi nisi esse voluptatem sit.
+        Dolores rerum deleniti laudantium earum, enim, neque fugiat velit ea quaerat, nisi tempora! Repellat at esse
+        quis voluptatum dignissimos eos commodi adipisci saepe quae quasi alias dolor modi, voluptate dicta!
+        At repudiandae error et qui culpa placeat libero, voluptatibus, fugiat nam nobis dicta porro itaque non deserunt
+        numquam veritatis similique deleniti, quaerat iure quidem facilis tempore aliquid recusandae nulla. Natus.
+        Iusto, suscipit non nostrum laborum cum similique harum itaque sequi quia, repellendus pariatur minima ipsa,
+        quas aspernatur? Animi asperiores nostrum, in, nesciunt dignissimos vero libero numquam obcaecati repellat
+        cupiditate harum!
+        Ipsam iusto sed illo maxime dolores voluptatem earum iure unde animi quia reprehenderit, ducimus fugiat est,
+        sunt veritatis nesciunt. Nesciunt error tempore qui praesentium ea expedita laudantium laborum vitae voluptatem!
+        Rerum fugiat perspiciatis esse, molestias quod reprehenderit velit est, consequuntur dolores veniam amet, facere
+        dicta ea ipsa voluptatem autem maxime quas ad iste tempore sequi quidem rem blanditiis hic! Quos!
+        Numquam impedit rem, autem odit voluptates, esse sequi consequatur dolor, qui odio nemo est at recusandae
+        pariatur dolore quasi voluptas provident quibusdam. In debitis itaque ad nihil neque, voluptatum aperiam!
+        Sint quasi alias soluta eveniet sequi id odit aut dignissimos saepe accusantium velit veritatis, amet nisi illum
+        natus ullam reiciendis rem possimus exercitationem doloribus impedit aperiam pariatur consequatur odio? Cumque.
+        Alias maxime fuga adipisci debitis amet ipsum modi. Voluptatum inventore voluptas quibusdam odit quis delectus
+        reiciendis laudantium placeat, consectetur veniam aut. Inventore eos nesciunt quaerat quae quo ipsum deleniti
+        repellat.
+        Voluptatum temporibus delectus consequuntur dolor eaque! Accusamus maxime placeat asperiores repudiandae sint
+        quidem quibusdam vero ipsam, at atque fugit labore dicta officiis earum nesciunt libero aperiam beatae ullam
+        error. Corrupti?
+        Commodi expedita fuga placeat eligendi! Labore iure quos possimus consequuntur commodi! Eius itaque sequi
+        asperiores commodi nam suscipit eum enim, laudantium recusandae officiis in iure alias porro, veritatis iusto
+        maiores.
+        Provident praesentium quasi pariatur dolor expedita recusandae libero. Alias eos rerum iusto voluptatibus.
+        Perferendis eligendi tempora iusto reiciendis sint hic quaerat repudiandae ex voluptates, doloribus minima sequi
+        deleniti rerum. Adipisci!
+        Ipsam sapiente, obcaecati delectus quaerat reprehenderit quae voluptatem vitae neque, eius impedit nulla. Nihil
+        molestiae omnis laborum repellendus temporibus laboriosam possimus aliquam reiciendis quam, aut blanditiis, quod
+        nostrum cumque eveniet.
+        Soluta aut iusto esse maiores. Debitis quod placeat maxime soluta quos, sequi molestias distinctio perferendis,
+        velit veniam dolor voluptate dolores numquam, eaque nostrum minus impedit. Tempora rerum voluptatem nulla neque?
+        Fugiat, modi in tenetur maiores dolorem est laborum optio ea veniam, earum beatae. Veritatis, laboriosam.
+        Asperiores quia alias vero quasi reprehenderit natus, suscipit vitae veniam. Ad, aut odio! Amet, ipsa.
+    </main>
+</body>
+
+</html>
